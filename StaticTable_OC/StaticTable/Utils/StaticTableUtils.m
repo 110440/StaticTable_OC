@@ -88,3 +88,52 @@
 }
 
 @end
+
+@implementation UIButton(StaticTable)
+
+
+- (void)StaticTable_countDownWithTime:(NSInteger)time title:(NSString *)title{
+    
+    [self setTitleColor:[UIColor lightGrayColor] forState:UIControlStateDisabled];
+    UIColor * oldColor = [UIColor colorWithCGColor:self.layer.borderColor];
+    
+    //倒计时时间
+    __block NSInteger timeOut = time;
+    NSString * oldTitle  = self.titleLabel.text ?:@"重发";
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    
+    //每秒执行一次
+    __weak UIButton * wSelf = self;
+    dispatch_source_set_timer(timer, dispatch_walltime(nil, 0), 1 * NSEC_PER_SEC, 0);
+    dispatch_source_set_event_handler(timer, ^{
+        
+        //倒计时结束，关闭
+        if (timeOut <= 0) {
+            dispatch_source_cancel(timer);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [wSelf setTitle:oldTitle forState:UIControlStateNormal];
+                [wSelf setEnabled:YES];
+                wSelf.layer.borderColor = oldColor.CGColor;
+            });
+            
+        } else {
+            
+            NSInteger allTime = time + 1;
+            NSInteger seconds = timeOut % allTime;
+            NSString * timeStr = [NSString stringWithFormat:@"%0.2ds", (int)seconds];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [wSelf setTitle:[NSString stringWithFormat:@"%@%@",timeStr,title] forState:UIControlStateNormal];
+                [wSelf setEnabled:NO];
+                wSelf.layer.borderColor = [UIColor lightGrayColor].CGColor;
+            });
+            
+            timeOut--;
+        }
+    });
+    dispatch_resume(timer);
+}
+
+@end

@@ -21,6 +21,9 @@
 #import "StaticButtonCell.h"
 #import "StaticCitySelectCell.h"
 #import "StaticDescribeCell.h"
+#import "StaticInputPhoneVerCodeCell.h"
+#import "StaticRectButtonCell.h"
+#import "StaticAvatarCell.h"
 
 @interface StaticTableController : UIViewController
 

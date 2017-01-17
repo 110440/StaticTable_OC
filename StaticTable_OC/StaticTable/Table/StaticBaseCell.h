@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StaticTableUtils.h"
 
+typedef void (^StaticClickButtonHandel)();
 typedef void (^StaticCellDidSelectHandel)() ;
 
 @class StaticTableViewSection;

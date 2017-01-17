@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D40586FD1E174E77007B815F /* StaticAvatarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D40586FC1E174E77007B815F /* StaticAvatarCell.m */; };
+		D412C76E1E16887600E254EC /* StaticInputPhoneVerCodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D412C76B1E16887600E254EC /* StaticInputPhoneVerCodeCell.m */; };
+		D412C76F1E16887600E254EC /* StaticRectButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D412C76D1E16887600E254EC /* StaticRectButtonCell.m */; };
 		D4F2FCE91DA76C6400A5B587 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F2FCE81DA76C6400A5B587 /* main.m */; };
 		D4F2FCEC1DA76C6400A5B587 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F2FCEB1DA76C6400A5B587 /* AppDelegate.m */; };
 		D4F2FCEF1DA76C6400A5B587 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F2FCEE1DA76C6400A5B587 /* ViewController.m */; };
@@ -41,6 +44,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D40586FB1E174E77007B815F /* StaticAvatarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticAvatarCell.h; sourceTree = "<group>"; };
+		D40586FC1E174E77007B815F /* StaticAvatarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticAvatarCell.m; sourceTree = "<group>"; };
+		D412C76A1E16887600E254EC /* StaticInputPhoneVerCodeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticInputPhoneVerCodeCell.h; sourceTree = "<group>"; };
+		D412C76B1E16887600E254EC /* StaticInputPhoneVerCodeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticInputPhoneVerCodeCell.m; sourceTree = "<group>"; };
+		D412C76C1E16887600E254EC /* StaticRectButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticRectButtonCell.h; sourceTree = "<group>"; };
+		D412C76D1E16887600E254EC /* StaticRectButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticRectButtonCell.m; sourceTree = "<group>"; };
 		D4F2FCE41DA76C6400A5B587 /* StaticTable_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaticTable_OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F2FCE81DA76C6400A5B587 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D4F2FCEA1DA76C6400A5B587 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -174,6 +183,12 @@
 		D4F2FD461DA76D5C00A5B587 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				D40586FB1E174E77007B815F /* StaticAvatarCell.h */,
+				D40586FC1E174E77007B815F /* StaticAvatarCell.m */,
+				D412C76A1E16887600E254EC /* StaticInputPhoneVerCodeCell.h */,
+				D412C76B1E16887600E254EC /* StaticInputPhoneVerCodeCell.m */,
+				D412C76C1E16887600E254EC /* StaticRectButtonCell.h */,
+				D412C76D1E16887600E254EC /* StaticRectButtonCell.m */,
 				D4F2FD471DA76D5C00A5B587 /* StaticButtonCell.h */,
 				D4F2FD481DA76D5C00A5B587 /* StaticButtonCell.m */,
 				D4F2FD491DA76D5C00A5B587 /* StaticCheckCell.h */,
@@ -329,6 +344,7 @@
 				D4F2FD781DA76D5C00A5B587 /* NibTableViewCell.m in Sources */,
 				D4F2FD7B1DA76D5C00A5B587 /* StaticCheckCell.m in Sources */,
 				D4F2FCEC1DA76C6400A5B587 /* AppDelegate.m in Sources */,
+				D40586FD1E174E77007B815F /* StaticAvatarCell.m in Sources */,
 				D4F2FD881DA76D5C00A5B587 /* StaticBaseCell.m in Sources */,
 				D4F2FD8F1DA76D5C00A5B587 /* testFlowCell.m in Sources */,
 				D4F2FD7F1DA76D5C00A5B587 /* StaticInputFieldCell.m in Sources */,
@@ -339,11 +355,13 @@
 				D4F2FD8D1DA76D5C00A5B587 /* StaticTable_KeyboardManager.m in Sources */,
 				D4F2FCE91DA76C6400A5B587 /* main.m in Sources */,
 				D4F2FD861DA76D5C00A5B587 /* InputTextController.m in Sources */,
+				D412C76F1E16887600E254EC /* StaticRectButtonCell.m in Sources */,
 				D4F2FD851DA76D5C00A5B587 /* CitySelectController.m in Sources */,
 				D4F2FD7E1DA76D5C00A5B587 /* StaticEmptyCell.m in Sources */,
 				D4F2FD821DA76D5C00A5B587 /* StaticRightTextSelectCell.m in Sources */,
 				D4F2FD901DA76D5C00A5B587 /* TestFlowViewController.m in Sources */,
 				D4F2FD7A1DA76D5C00A5B587 /* StaticButtonCell.m in Sources */,
+				D412C76E1E16887600E254EC /* StaticInputPhoneVerCodeCell.m in Sources */,
 				D4F2FD7C1DA76D5C00A5B587 /* StaticCitySelectCell.m in Sources */,
 				D4F2FD831DA76D5C00A5B587 /* StaticSwitchCell.m in Sources */,
 			);
@@ -496,6 +514,7 @@
 				D4F2FCFD1DA76C6400A5B587 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

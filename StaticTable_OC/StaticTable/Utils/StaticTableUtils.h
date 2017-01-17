@@ -30,3 +30,10 @@
 + (UIImage *)StaticTable_imageWithColor:(UIColor *)color;
 
 @end
+
+@interface UIButton(StaticTable)
+
+// 倒计时
+- (void) StaticTable_countDownWithTime:(NSInteger)time title:(NSString*)title;
+
+@end

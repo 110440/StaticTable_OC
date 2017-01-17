@@ -8,7 +8,7 @@
 
 #import "StaticBaseCell.h"
 
-typedef void (^StaticClickButtonHandel)();
+
 
 @interface StaticButtonCell : StaticBaseCell
 
